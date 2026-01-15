@@ -7,62 +7,70 @@
   </defs>
 
   <style>
-    .box { fill: #ffffff; stroke: #4CAF50; stroke-width: 2; rx: 10; }
+    .box {
+      fill: #ffffff;
+      stroke: #4CAF50;
+      stroke-width: 2;
+      rx: 10;
+      vector-effect: non-scaling-stroke;
+    }
     .title { font-size: 14px; font-weight: bold; fill: #333; }
     .text { font-size: 12px; fill: #333; }
     .line { stroke: #4CAF50; stroke-width: 2; marker-end: url(#arrow); }
   </style>
 
-  <!-- Top Layer -->
-  <rect x="300" y="20" width="300" height="60" class="box"/>
-  <text x="450" y="50" text-anchor="middle" class="title">Quality Governance</text>
-  <text x="450" y="68" text-anchor="middle" class="text">Standards · KPIs · Dashboards · Alerts</text>
+  <!-- GRID CENTER = 450 -->
 
-  <!-- GitHub -->
-  <rect x="50" y="130" width="250" height="80" class="box"/>
-  <text x="175" y="165" text-anchor="middle" class="title">GitHub</text>
-  <text x="175" y="185" text-anchor="middle" class="text">Actions · Copilot · Cline</text>
+  <!-- Top Governance -->
+  <rect x="300" y="30" width="300" height="60" class="box"/>
+  <text x="450" y="58" text-anchor="middle" class="title">Quality Governance</text>
+  <text x="450" y="76" text-anchor="middle" class="text">Standards · KPIs · Dashboards · Alerts</text>
 
-  <!-- AI Test Factory -->
-  <rect x="350" y="130" width="250" height="80" class="box"/>
-  <text x="475" y="165" text-anchor="middle" class="title">AI Test Factory</text>
-  <text x="475" y="185" text-anchor="middle" class="text">Workflows · MCPs · Generators</text>
+  <!-- Row 1 -->
+  <rect x="70" y="140" width="240" height="80" class="box"/>
+  <text x="190" y="175" text-anchor="middle" class="title">GitHub</text>
+  <text x="190" y="195" text-anchor="middle" class="text">Actions · Copilot · Cline</text>
 
-  <!-- Jira Xray -->
-  <rect x="650" y="130" width="200" height="80" class="box"/>
-  <text x="750" y="165" text-anchor="middle" class="title">Jira + Xray</text>
-  <text x="750" y="185" text-anchor="middle" class="text">Tests · Plans · Executions</text>
+  <rect x="330" y="140" width="240" height="80" class="box"/>
+  <text x="450" y="175" text-anchor="middle" class="title">AI Test Factory</text>
+  <text x="450" y="195" text-anchor="middle" class="text">Workflows · MCPs · Generators</text>
+
+  <rect x="590" y="140" width="240" height="80" class="box"/>
+  <text x="710" y="175" text-anchor="middle" class="title">Jira + Xray</text>
+  <text x="710" y="195" text-anchor="middle" class="text">Tests · Plans · Executions</text>
 
   <!-- Test Repo -->
-  <rect x="350" y="260" width="250" height="80" class="box"/>
-  <text x="475" y="300" text-anchor="middle" class="title">Test Repositories</text>
-  <text x="475" y="320" text-anchor="middle" class="text">Automation Code · Standards</text>
+  <rect x="330" y="280" width="240" height="80" class="box"/>
+  <text x="450" y="315" text-anchor="middle" class="title">Test Repositories</text>
+  <text x="450" y="335" text-anchor="middle" class="text">Automation Code · Standards</text>
 
   <!-- CI/CD -->
-  <rect x="350" y="390" width="250" height="80" class="box"/>
-  <text x="475" y="430" text-anchor="middle" class="title">CI/CD Pipelines</text>
-  <text x="475" y="450" text-anchor="middle" class="text">GitHub Actions · Test Execution</text>
+  <rect x="330" y="410" width="240" height="80" class="box"/>
+  <text x="450" y="445" text-anchor="middle" class="title">CI/CD Pipelines</text>
+  <text x="450" y="465" text-anchor="middle" class="text">GitHub Actions · Execution</text>
 
   <!-- Webhooks -->
-  <rect x="350" y="520" width="250" height="70" class="box"/>
-  <text x="475" y="555" text-anchor="middle" class="title">Webhooks</text>
+  <rect x="330" y="540" width="240" height="70" class="box"/>
+  <text x="450" y="580" text-anchor="middle" class="title">Webhooks</text>
 
   <!-- Database -->
-  <rect x="100" y="520" width="200" height="70" class="box"/>
-  <text x="200" y="555" text-anchor="middle" class="title">QA Database</text>
+  <rect x="90" y="540" width="220" height="70" class="box"/>
+  <text x="200" y="580" text-anchor="middle" class="title">QA Database</text>
 
   <!-- Retool -->
-  <rect x="650" y="520" width="200" height="70" class="box"/>
-  <text x="750" y="555" text-anchor="middle" class="title">Retool</text>
-  <text x="750" y="575" text-anchor="middle" class="text">Dashboards · Jiras · KPIs</text>
+  <rect x="590" y="540" width="220" height="70" class="box"/>
+  <text x="700" y="570" text-anchor="middle" class="title">Retool</text>
+  <text x="700" y="590" text-anchor="middle" class="text">Dashboards · KPIs · Jiras</text>
 
   <!-- Connections -->
-  <line x1="300" y1="170" x2="350" y2="170" class="line"/>
-  <line x1="600" y1="170" x2="650" y2="170" class="line"/>
-  <line x1="475" y1="210" x2="475" y2="260" class="line"/>
-  <line x1="475" y1="340" x2="475" y2="390" class="line"/>
-  <line x1="475" y1="470" x2="475" y2="520" class="line"/>
-  <line x1="350" y1="555" x2="300" y2="555" class="line"/>
-  <line x1="600" y1="555" x2="650" y2="555" class="line"/>
+  <line x1="310" y1="180" x2="330" y2="180" class="line"/>
+  <line x1="570" y1="180" x2="590" y2="180" class="line"/>
+
+  <line x1="450" y1="220" x2="450" y2="280" class="line"/>
+  <line x1="450" y1="360" x2="450" y2="410" class="line"/>
+  <line x1="450" y1="490" x2="450" y2="540" class="line"/>
+
+  <line x1="330" y1="575" x2="310" y2="575" class="line"/>
+  <line x1="570" y1="575" x2="590" y2="575" class="line"/>
 
 </svg>
