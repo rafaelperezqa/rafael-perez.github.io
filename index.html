@@ -318,4 +318,157 @@ section {
         <li>Code scaffolding estandarizado</li>
       </ul>
       <p>
-        <a href="https://github.com/rafaelperezqa/ai-test-factory" target="_blank">Ver repo_
+        <a href="https://github.com/rafaelperezqa/ai-test-factory" target="_blank">Ver repositorio</a>
+        <span class="project-meta">· README_ES.md disponible</span>
+      </p>
+    </div>
+    <div class="lang-en">
+      <p><strong>AI-driven test + Jira/Xray generation</strong></p>
+      <ul>
+        <li>Copilot + Cline + MCPs</li>
+        <li>Jira / Xray integration</li>
+        <li>Standardized code scaffolding</li>
+      </ul>
+      <p>
+        <a href="https://github.com/rafaelperezqa/ai-test-factory" target="_blank">View repository</a>
+      </p>
+    </div>
+  </div>
+
+  <!-- QA OBSERVABILITY -->
+  <div class="project-card">
+    <h3>QA Observability Platform</h3>
+    <div class="lang-es">
+      <p><strong>Observabilidad de ejecuciones y KPIs de QA en Retool</strong></p>
+      <ul>
+        <li>Ingesta vía webhooks / APIs</li>
+        <li>Dashboards, tendencias y calidad por test</li>
+        <li>Orientado a acción</li>
+      </ul>
+      <p>
+        <a href="https://github.com/rafaelperezqa/qa-observability" target="_blank">Ver repositorio</a>
+      </p>
+    </div>
+    <div class="lang-en">
+      <p><strong>QA execution observability and KPIs in Retool</strong></p>
+      <ul>
+        <li>Ingestion via webhooks / APIs</li>
+        <li>Dashboards, trends and per-test quality</li>
+        <li>Action-oriented</li>
+      </ul>
+      <p>
+        <a href="https://github.com/rafaelperezqa/qa-observability" target="_blank">View repository</a>
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- INITIATIVES -->
+<section>
+  <h2>Key Initiatives</h2>
+  <div class="kicker lang-es">Impacto organizativo más allá del código</div>
+  <div class="kicker lang-en">Organizational impact beyond code</div>
+
+  <p class="section-intro lang-es">
+    Iniciativas estratégicas que he liderado para escalar la calidad, mejorar la gobernanza
+    y acelerar la adopción de IA en equipos de QA.
+  </p>
+  <p class="section-intro lang-en">
+    Strategic initiatives I led to scale quality, improve governance
+    and accelerate AI adoption across QA teams.
+  </p>
+
+  <div class="initiatives-grid">
+    <div class="initiative-card">
+      <h3>Xray Governance & QA Standards</h3>
+      <p class="lang-es">
+        Definición de convenciones, manuales y dashboards de control para asegurar la calidad de los artefactos de QA a escala.
+      </p>
+      <p class="lang-en">
+        Definition of conventions, playbooks and control dashboards to ensure QA artifact quality at scale.
+      </p>
+    </div>
+
+    <div class="initiative-card">
+      <h3>AI Enablement for QA Teams</h3>
+      <p class="lang-es">
+        Implantación de Copilot, Cline y flujos con MCP para acelerar onboarding y estandarizar la creación de automatización.
+      </p>
+      <p class="lang-en">
+        Rollout of Copilot, Cline and MCP-based flows to accelerate onboarding and standardize automation creation.
+      </p>
+    </div>
+
+    <div class="initiative-card">
+      <h3>QA Capacity & Demand Management</h3>
+      <p class="lang-es">
+        Modelos de planificación basados en datos para anticipar carga y optimizar la asignación del equipo.
+      </p>
+      <p class="lang-en">
+        Data-driven planning models to anticipate workload and optimize team allocation.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- PLATFORM -->
+<section>
+  <h2>AI-Driven QA Platform</h2>
+  <div class="kicker lang-es">Las tres piezas que convierten QA en un sistema</div>
+  <div class="kicker lang-en">The three pieces that turn QA into a system</div>
+
+  <p class="section-intro lang-es">
+    Observabilidad para ver, fábrica de tests para construir rápido y automatización de ingeniería
+    para mantener disciplina y trazabilidad.
+  </p>
+  <p class="section-intro lang-en">
+    Observability to see, test factory to build fast and engineering automation
+    to keep discipline and traceability.
+  </p>
+
+  <div class="platform-grid">
+    <div class="platform-card">
+      <div class="platform-icon">📊</div>
+      <h3 class="lang-es">QA Observability</h3>
+      <h3 class="lang-en">QA Observability</h3>
+      <p class="lang-es">Dashboards vivos con KPIs, tendencias y foco en acción.</p>
+      <p class="lang-en">Live dashboards with KPIs, trends and action focus.</p>
+    </div>
+
+    <div class="platform-card highlight">
+      <div class="platform-icon">🧪</div>
+      <h3 class="lang-es">AI Test Factory</h3>
+      <h3 class="lang-en">AI Test Factory</h3>
+      <p class="lang-es">Generación estandarizada de tests y artefactos Jira/Xray.</p>
+      <p class="lang-en">Standardized generation of tests and Jira/Xray artifacts.</p>
+      <span class="crown">👑 Core</span>
+    </div>
+
+    <div class="platform-card">
+      <div class="platform-icon">⚙️</div>
+      <h3 class="lang-es">Engineering Automation</h3>
+      <h3 class="lang-en">Engineering Automation</h3>
+      <p class="lang-es">Automatización de ramas y PRs para calidad y orden.</p>
+      <p class="lang-en">Branch and PR automation for quality and order.</p>
+    </div>
+  </div>
+</section>
+
+</div>
+
+<script>
+const btnES = document.getElementById('btnES');
+const btnEN = document.getElementById('btnEN');
+
+function setLanguage(lang){
+  document.querySelectorAll('.lang-es').forEach(e=>e.style.display = lang==='es' ? 'block' : 'none');
+  document.querySelectorAll('.lang-en').forEach(e=>e.style.display = lang==='en' ? 'block' : 'none');
+}
+
+btnES.addEventListener('click', ()=>setLanguage('es'));
+btnEN.addEventListener('click', ()=>setLanguage('en'));
+setLanguage('es');
+</script>
+
+</body>
+</html>
