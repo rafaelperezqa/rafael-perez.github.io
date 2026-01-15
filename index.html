@@ -1,149 +1,136 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Rafael Pérez - Quality Platform Architect</title>
-  <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rafael Pérez - Quality Platform Architect · AI-Driven QA Systems</title>
+<style>
+  body { font-family: Arial, sans-serif; margin: 0; padding: 20px; line-height: 1.5; background: #f5f5f5; }
+  header { text-align: center; margin-bottom: 40px; }
+  header h1 { font-size: 2.2rem; margin: 0; }
+  header h2 { font-size: 1.4rem; color: #4CAF50; margin: 5px 0; }
+  header p { font-size: 1rem; color: #555; }
+  section { background: #fff; padding: 20px; margin-bottom: 30px; border-radius: 10px; box-shadow: 0 2px 6px rgba(0,0,0,0.1); }
+  h2 { color: #4CAF50; }
+  h3 { color: #333; }
+  button { margin-right: 10px; padding: 6px 12px; border: none; border-radius: 5px; background: #4CAF50; color: white; cursor: pointer; }
+  button:hover { background: #45a049; }
+  img { max-width: 100%; display: block; margin: 20px auto; }
+  .project { margin-bottom: 20px; }
+</style>
 </head>
 <body>
 
-<div class="language-toggle">
-  <button id="btn-es" class="active">ES</button>
-  <button id="btn-en">EN</button>
-</div>
-
-<!-- HERO -->
+<!-- HEADER PROFESIONAL -->
 <header>
   <h1>Rafael Pérez</h1>
-  <p id="hero-text">Arquitecto de Plataformas de QA · Sistemas de QA impulsados por IA</p>
+  <h2>Quality Platform Architect · AI-Driven QA Systems</h2>
+  <p>QA Lead | Quality Architect | Innovating Test Automation & Observability</p>
 </header>
 
-<!-- WHAT I BUILT -->
-<section>
-  <h2 id="section-built-title">Lo que he construido</h2>
-  <p id="section-built-text">
-    He creado una plataforma de calidad integral que conecta IA, GitHub, Jira, Xray, CI/CD y observabilidad en un único sistema operativo para QA.
-  </p>
-</section>
-
-<!-- THE 4 PILLARS -->
-<section>
-  <h2 id="section-pillars-title">Los 4 pilares</h2>
-  <div class="pillars">
-    <div class="pillar">
-      <h3 id="pillar1-title">AI Test Factory</h3>
-      <p id="pillar1-text">
-        Sistema basado en Copilot y Cline que genera automáticamente clases, tests, Jiras y artefactos Xray siguiendo estándares.
-      </p>
-    </div>
-    <div class="pillar">
-      <h3 id="pillar2-title">QA Observability</h3>
-      <p id="pillar2-text">
-        Dashboards en Retool con ingesta de ejecuciones desde GitHub, KPIs, fallos, creación directa de Jiras y lanzamiento de pipelines.
-      </p>
-    </div>
-    <div class="pillar">
-      <h3 id="pillar3-title">Quality Governance</h3>
-      <p id="pillar3-text">
-        Marco de gobernanza de QA en Jira/Xray con estándares, convenciones, dashboards y alertas para mantener consistencia.
-      </p>
-    </div>
-    <div class="pillar">
-      <h3 id="pillar4-title">CI/CD Backbone</h3>
-      <p id="pillar4-text">
-        Integración total mediante GitHub Actions y webhooks para mantener la trazabilidad y automatización completa.
-      </p>
-    </div>
-  </div>
-</section>
-
-<!-- ARCHITECTURE -->
-<section>
+<!-- ARQUITECTURA -->
+<section id="architecture">
   <h2 id="section-architecture-title">Arquitectura</h2>
   <p id="section-architecture-text">
     Todos los sistemas están conectados mediante GitHub Actions, webhooks y APIs, formando una única fuente de verdad para la calidad.
   </p>
-  <img src="assets/architecture.svg" alt="Quality Platform Architecture" style="width:100%; max-width:900px; display:block; margin:auto;">
-
+  <img src="assets/architecture.svg" alt="Quality Platform Architecture">
 </section>
 
-<!-- LIVE PROJECTS -->
-<section>
-  <h2 id="section-projects-title">Proyectos en vivo</h2>
-  <div class="project-links">
-    <a href="https://github.com/rafaelperezqa/quality-platform" target="_blank">Quality Platform</a>
-    <a href="https://github.com/rafaelperezqa/ai-test-factory" target="_blank">AI Test Factory</a>
-    <a href="https://github.com/rafaelperezqa/qa-observability" target="_blank">QA Observability</a>
-    <a href="https://github.com/rafaelperezqa/qa-governance" target="_blank">QA Governance</a>
+<!-- PROYECTOS -->
+<section id="projects">
+  <h2 id="projects-title">Proyectos</h2>
+
+  <!-- Toggle ES / EN -->
+  <div style="margin-bottom: 20px;">
+    <button id="btnES">ES</button>
+    <button id="btnEN">EN</button>
   </div>
-</section>
 
-<!-- ABOUT -->
-<section>
-  <h2 id="section-about-title">Sobre mí</h2>
-  <p id="section-about-text">
-    11+ años en ecommerce enterprise (Inditex). Desde tester junior hasta QA Manager y ahora Quality Architect. Mi especialidad es convertir ecosistemas QA en sistemas gobernados, automatizados y medibles.
-  </p>
-</section>
+  <!-- AI Test Factory en Español -->
+  <div class="project" id="AI_ES">
+    <h3>AI Test Factory</h3>
+    <p><strong>Plataforma de generación de Tests y Jira impulsada por IA</strong></p>
+    <p>Este repositorio contiene un sistema basado en IA que transforma la creación de tests de una tarea manual en un flujo <strong>automatizado, gobernado y totalmente trazable</strong>.</p>
+    <ul>
+      <li>GitHub Copilot</li>
+      <li>Cline</li>
+      <li>MCPs personalizados</li>
+      <li>APIs de Jira y Xray</li>
+      <li>GitHub Actions</li>
+    </ul>
+    <p>Para crear <strong>código de test, issues de Jira y artefactos de Xray estandarizados</strong> en minutos en lugar de horas.</p>
+    <p>
+      <a href="https://github.com/rafaelperezqa/ai-test-factory" target="_blank">Ver repositorio</a> 
+      (la versión en español está disponible en <code>README_ES.md</code>)
+    </p>
+  </div>
 
-<!-- CONTACT -->
-<section>
-  <h2 id="section-contact-title">Contacto</h2>
-  <p>Email: <a href="mailto:rafael.perez.qa@gmail.com">rafael.perez.qa@gmail.com</a></p>
-  <p>LinkedIn: <a href="https://www.linkedin.com/in/rafaelperezqa" target="_blank">rafaelperezqa</a></p>
-  <p>GitHub: <a href="https://github.com/rafaelperezqa" target="_blank">rafaelperezqa</a></p>
+  <!-- AI Test Factory en English -->
+  <div class="project" id="AI_EN" style="display:none;">
+    <h3>AI Test Factory</h3>
+    <p><strong>AI-driven Test & Jira Generation Platform</strong></p>
+    <p>This repository contains an AI-powered system that turns test creation from a manual activity into an automated, governed and traceable workflow.</p>
+    <ul>
+      <li>GitHub Copilot</li>
+      <li>Cline</li>
+      <li>Custom MCPs</li>
+      <li>Jira & Xray APIs</li>
+      <li>GitHub Actions</li>
+    </ul>
+    <p>To create <strong>standardized test code, Jira issues and Xray artifacts</strong> in minutes instead of hours.</p>
+    <p><a href="https://github.com/rafaelperezqa/ai-test-factory" target="_blank">View repository</a></p>
+  </div>
+
+  <!-- QA Observability Platform en Español -->
+  <div class="project" id="OBS_ES">
+    <h3>QA Observability Platform</h3>
+    <p><strong>Plataforma de monitorización y control de QA con Retool</strong></p>
+    <p>Panel que recoge la información de ejecuciones automáticas mediante webhooks y APIs, mostrando KPIs, resultados de tests, incidencias y evolución de cada test.</p>
+    <ul>
+      <li>Visualización de ejecuciones y tests</li>
+      <li>Generación de Jiras desde los resultados</li>
+      <li>Alertas de desviaciones en estandarización</li>
+      <li>Monitorización de KPIs y tendencias</li>
+      <li>Lanzamiento de ejecuciones desde el panel</li>
+    </ul>
+    <p><a href="https://github.com/rafaelperezqa/qa-observability" target="_blank">Ver repositorio</a></p>
+  </div>
+
+  <!-- QA Observability Platform en English -->
+  <div class="project" id="OBS_EN" style="display:none;">
+    <h3>QA Observability Platform</h3>
+    <p><strong>QA Monitoring & Control Platform with Retool</strong></p>
+    <p>Dashboard that collects automated execution information via webhooks and APIs, showing KPIs, test results, incidents, and the evolution of each test.</p>
+    <ul>
+      <li>Executions and test visualization</li>
+      <li>Generate Jiras from results</li>
+      <li>Alerts for standardization deviations</li>
+      <li>KPIs and trend monitoring</li>
+      <li>Trigger executions from the dashboard</li>
+    </ul>
+    <p><a href="https://github.com/rafaelperezqa/qa-observability" target="_blank">View repository</a></p>
+  </div>
+
 </section>
 
 <script>
-  // Traducción ES / EN
-  const texts = {
-    en: {
-      "hero-text": "Quality Platform Architect · AI-Driven QA Systems",
-      "section-built-title": "What I Built",
-      "section-built-text": "I built an end-to-end Quality Platform connecting AI, GitHub, Jira, Xray, CI/CD and observability into a single operating system for QA.",
-      "section-pillars-title": "The 4 Pillars",
-      "pillar1-title": "AI Test Factory",
-      "pillar1-text": "System based on Copilot and Cline generating classes, tests, Jiras and Xray artifacts automatically following standards.",
-      "pillar2-title": "QA Observability",
-      "pillar2-text": "Retool dashboards fed by GitHub executions, KPIs, failures, direct Jira creation and pipeline triggers.",
-      "pillar3-title": "Quality Governance",
-      "pillar3-text": "QA governance framework in Jira/Xray with standards, conventions, dashboards and alerts to maintain consistency.",
-      "pillar4-title": "CI/CD Backbone",
-      "pillar4-text": "Full integration using GitHub Actions and webhooks to ensure traceability and complete automation.",
-      "section-architecture-title": "Architecture",
-      "section-architecture-text": "All systems are connected via GitHub Actions, webhooks and APIs forming a single source of truth for quality.",
-      "section-projects-title": "Live Projects",
-      "section-about-title": "About Me",
-      "section-about-text": "11+ years in enterprise ecommerce (Inditex). From junior tester to QA Manager and now Quality Architect. My specialty is turning QA ecosystems into governed, automated, measurable systems.",
-      "section-contact-title": "Contact",
-    },
-    es: {
-      // los textos ya están en español, así que no es necesario cambiarlos
-    }
-  };
+const btnES = document.getElementById('btnES');
+const btnEN = document.getElementById('btnEN');
 
-  const btnEs = document.getElementById('btn-es');
-  const btnEn = document.getElementById('btn-en');
+btnES.addEventListener('click', () => {
+  document.getElementById('AI_ES').style.display = 'block';
+  document.getElementById('AI_EN').style.display = 'none';
+  document.getElementById('OBS_ES').style.display = 'block';
+  document.getElementById('OBS_EN').style.display = 'none';
+});
 
-  btnEs.addEventListener('click', () => {
-    btnEs.classList.add('active');
-    btnEn.classList.remove('active');
-    setLanguage('es');
-  });
-
-  btnEn.addEventListener('click', () => {
-    btnEn.classList.add('active');
-    btnEs.classList.remove('active');
-    setLanguage('en');
-  });
-
-  function setLanguage(lang) {
-    for (const id in texts[lang]) {
-      const el = document.getElementById(id);
-      if(el) el.textContent = texts[lang][id];
-    }
-  }
+btnEN.addEventListener('click', () => {
+  document.getElementById('AI_ES').style.display = 'none';
+  document.getElementById('AI_EN').style.display = 'block';
+  document.getElementById('OBS_ES').style.display = 'none';
+  document.getElementById('OBS_EN').style.display = 'block';
+});
 </script>
 
 </body>
