@@ -113,6 +113,111 @@
   </div>
 
 </section>
+<!-- SECCIÓN WORKFLOWS -->
+<section id="workflows">
+  <h2>Workflows Automáticos / Automated Workflows</h2>
+
+  <!-- Toggle ES / EN -->
+  <div style="margin-bottom: 20px;">
+    <button id="btnWF_ES">ES</button>
+    <button id="btnWF_EN">EN</button>
+  </div>
+
+  <div id="workflows-container">
+
+    <!-- AI Test Skeleton Generator -->
+    <div class="workflow-card" id="WF1_ES">
+      <img src="assets/workflow-skeleton.svg" alt="Generador de Esqueleto">
+      <h4>Generador de Esqueleto de Tests</h4>
+      <p>Crea automáticamente la estructura base de un test, con carpeta, nombre, labels y estandarización completa.</p>
+      <ul>
+        <li>Sub-WF: Limpieza de entorno</li>
+        <li>Sub-WF: Creación de nueva rama</li>
+        <li>Sub-WF: Generación de clase y test</li>
+      </ul>
+      <a href="https://github.com/rafaelperezqa/ai-test-factory" target="_blank">Ver repositorio</a>
+    </div>
+
+    <div class="workflow-card" id="WF1_EN" style="display:none;">
+      <img src="assets/workflow-skeleton.svg" alt="Test Skeleton Generator">
+      <h4>Test Skeleton Generator</h4>
+      <p>Automatically generates the base structure of a test, with folder, name, labels and full standardization.</p>
+      <ul>
+        <li>Sub-WF: Environment cleanup</li>
+        <li>Sub-WF: Create new branch</li>
+        <li>Sub-WF: Generate class & test</li>
+      </ul>
+      <a href="https://github.com/rafaelperezqa/ai-test-factory" target="_blank">View repository</a>
+    </div>
+
+    <!-- Test + Jira Creator -->
+    <div class="workflow-card" id="WF2_ES">
+      <img src="assets/workflow-test.svg" alt="Test + Jira">
+      <h4>Creación Automática de Test + Jira</h4>
+      <p>Genera un test y su issue en Jira, integrando Xray, con toda la información prellenada y estandarizada.</p>
+      <ul>
+        <li>Sub-WF: Comprobación de existencia de Jira</li>
+        <li>Sub-WF: Creación de Jira si no existe</li>
+        <li>Sub-WF: Vinculación con Xray</li>
+      </ul>
+      <a href="https://github.com/rafaelperezqa/ai-test-factory" target="_blank">Ver repositorio</a>
+    </div>
+
+    <div class="workflow-card" id="WF2_EN" style="display:none;">
+      <img src="assets/workflow-test.svg" alt="Test + Jira">
+      <h4>Automated Test + Jira Creation</h4>
+      <p>Generates a test and its Jira issue, fully integrated with Xray, with pre-filled and standardized information.</p>
+      <ul>
+        <li>Sub-WF: Check if Jira exists</li>
+        <li>Sub-WF: Create Jira if missing</li>
+        <li>Sub-WF: Link with Xray</li>
+      </ul>
+      <a href="https://github.com/rafaelperezqa/ai-test-factory" target="_blank">View repository</a>
+    </div>
+
+    <!-- ReTool Dashboard Launcher -->
+    <div class="workflow-card" id="WF3_ES">
+      <img src="assets/workflow-retool.svg" alt="ReTool Dashboard">
+      <h4>Lanzador de Panel de Retool</h4>
+      <p>Permite visualizar ejecuciones, KPIs, incidencias y lanzar nuevas ejecuciones desde un único panel centralizado.</p>
+      <ul>
+        <li>Sub-WF: Visualización de resultados</li>
+        <li>Sub-WF: Creación de Jira desde el panel</li>
+        <li>Sub-WF: Monitorización de tendencias</li>
+      </ul>
+      <a href="https://github.com/rafaelperezqa/qa-observability" target="_blank">Ver repositorio</a>
+    </div>
+
+    <div class="workflow-card" id="WF3_EN" style="display:none;">
+      <img src="assets/workflow-retool.svg" alt="ReTool Dashboard">
+      <h4>ReTool Dashboard Launcher</h4>
+      <p>Allows visualization of executions, KPIs, incidents and launching new runs from a single centralized dashboard.</p>
+      <ul>
+        <li>Sub-WF: Results visualization</li>
+        <li>Sub-WF: Jira creation from dashboard</li>
+        <li>Sub-WF: Trends monitoring</li>
+      </ul>
+      <a href="https://github.com/rafaelperezqa/qa-observability" target="_blank">View repository</a>
+    </div>
+
+    <!-- Puedes añadir más workflows simplemente duplicando este bloque y cambiando ID -->
+  </div>
+</section>
+
+<script>
+const btnWF_ES = document.getElementById('btnWF_ES');
+const btnWF_EN = document.getElementById('btnWF_EN');
+
+btnWF_ES.addEventListener('click', () => {
+  document.querySelectorAll('#workflows-container > div[id$="_ES"]').forEach(d=>d.style.display='block');
+  document.querySelectorAll('#workflows-container > div[id$="_EN"]').forEach(d=>d.style.display='none');
+});
+
+btnWF_EN.addEventListener('click', () => {
+  document.querySelectorAll('#workflows-container > div[id$="_ES"]').forEach(d=>d.style.display='none');
+  document.querySelectorAll('#workflows-container > div[id$="_EN"]').forEach(d=>d.style.display='block');
+});
+</script>
 
 <script>
 const btnES = document.getElementById('btnES');
