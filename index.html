@@ -3,210 +3,247 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Rafael Pérez - Quality Platform Architect · AI-Driven QA Systems</title>
+
+<title>Rafael Pérez · Quality Platform Architect · AI-Driven QA Systems</title>
+
 <style>
-  body { font-family: Arial, sans-serif; margin: 0; padding: 20px; line-height: 1.5; background: #f5f5f5; }
-  header { text-align: center; margin-bottom: 40px; }
-  header h1 { font-size: 2.2rem; margin: 0; }
-  header h2 { font-size: 1.4rem; color: #4CAF50; margin: 5px 0; }
-  header p { font-size: 1rem; color: #555; }
-  section { background: #fff; padding: 20px; margin-bottom: 30px; border-radius: 10px; box-shadow: 0 2px 6px rgba(0,0,0,0.1); }
-  h2 { color: #4CAF50; }
-  h3 { color: #333; }
-  button { margin-right: 10px; padding: 6px 12px; border: none; border-radius: 5px; background: #4CAF50; color: white; cursor: pointer; }
-  button:hover { background: #45a049; }
-  img { max-width: 100%; display: block; margin: 20px auto; }
-  .project { margin-bottom: 20px; }
+:root {
+  --green:#4CAF50;
+  --bg:#f5f5f5;
+  --card:#ffffff;
+  --text:#333;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+}
+
+.container {
+  max-width: 1200px;   /* ~80% en desktop */
+  margin: 0 auto;
+  padding: 20px;
+}
+
+header {
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom:40px;
+}
+
+.lang-switch button {
+  margin-left:10px;
+  padding:6px 12px;
+  border:none;
+  border-radius:5px;
+  background:var(--green);
+  color:white;
+  cursor:pointer;
+}
+
+.lang-switch button:hover {
+  background:#43a047;
+}
+
+.hero {
+  text-align:center;
+  margin-bottom:50px;
+}
+
+.hero h1 {
+  font-size:2.6rem;
+  margin:0;
+}
+
+.hero h2 {
+  font-size:1.4rem;
+  color:var(--green);
+  margin:10px 0;
+}
+
+.hero p {
+  max-width:800px;
+  margin:15px auto;
+  color:#555;
+}
+
+section {
+  background:var(--card);
+  padding:30px;
+  border-radius:12px;
+  margin-bottom:40px;
+  box-shadow:0 4px 10px rgba(0,0,0,0.08);
+}
+
+.section-intro {
+  max-width:700px;
+  margin-bottom:25px;
+  color:#555;
+}
+
+/* Projects */
+
+.project {
+  margin-bottom:30px;
+}
+
+/* Platform */
+
+.platform-grid {
+  display:grid;
+  grid-template-columns: repeat(auto-fit,minmax(260px,1fr));
+  gap:25px;
+}
+
+.platform-card {
+  background:#111;
+  color:white;
+  border-radius:14px;
+  padding:24px;
+  position:relative;
+  box-shadow:0 10px 25px rgba(0,0,0,.4);
+}
+
+.platform-card h3 {
+  margin-top:0;
+}
+
+.platform-icon {
+  font-size:32px;
+  margin-bottom:10px;
+}
+
+.platform-card.highlight {
+  border:2px solid #4f8cff;
+  box-shadow:0 0 30px rgba(79,140,255,.4);
+}
+
+.crown {
+  position:absolute;
+  top:12px;
+  right:16px;
+  color:#ffd700;
+}
+
+/* Language */
+.lang-en { display:none; }
 </style>
 </head>
+
 <body>
 
-<!-- HEADER PROFESIONAL -->
+<div class="container">
+
 <header>
-  <h1>Rafael Pérez</h1>
-  <h2>Quality Platform Architect · AI-Driven QA Systems</h2>
-  <p>QA Lead | Quality Architect | Innovating Test Automation & Observability</p>
-</header>
-
-<!-- ARQUITECTURA -->
-<section id="architecture">
-  <h2 id="section-architecture-title">Arquitectura</h2>
-  <p id="section-architecture-text">
-    Todos los sistemas están conectados mediante GitHub Actions, webhooks y APIs, formando una única fuente de verdad para la calidad.
-  </p>
-  <img src="assets/architecture.svg" alt="Quality Platform Architecture">
-</section>
-
-<!-- PROYECTOS -->
-<section id="projects">
-  <h2 id="projects-title">Proyectos</h2>
-
-  <!-- Toggle ES / EN -->
-  <div style="margin-bottom: 20px;">
+  <strong>Rafael Pérez</strong>
+  <div class="lang-switch">
     <button id="btnES">ES</button>
     <button id="btnEN">EN</button>
   </div>
+</header>
 
-  <!-- AI Test Factory en Español -->
-  <div class="project" id="AI_ES">
-    <h3>AI Test Factory</h3>
-    <p><strong>Plataforma de generación de Tests y Jira impulsada por IA</strong></p>
-    <p>Este repositorio contiene un sistema basado en IA que transforma la creación de tests de una tarea manual en un flujo <strong>automatizado, gobernado y totalmente trazable</strong>.</p>
-    <ul>
-      <li>GitHub Copilot</li>
-      <li>Cline</li>
-      <li>MCPs personalizados</li>
-      <li>APIs de Jira y Xray</li>
-      <li>GitHub Actions</li>
-    </ul>
-    <p>Para crear <strong>código de test, issues de Jira y artefactos de Xray estandarizados</strong> en minutos en lugar de horas.</p>
-    <p>
-      <a href="https://github.com/rafaelperezqa/ai-test-factory" target="_blank">Ver repositorio</a> 
-      (la versión en español está disponible en <code>README_ES.md</code>)
-    </p>
-  </div>
-
-  <!-- AI Test Factory en English -->
-  <div class="project" id="AI_EN" style="display:none;">
-    <h3>AI Test Factory</h3>
-    <p><strong>AI-driven Test & Jira Generation Platform</strong></p>
-    <p>This repository contains an AI-powered system that turns test creation from a manual activity into an automated, governed and traceable workflow.</p>
-    <ul>
-      <li>GitHub Copilot</li>
-      <li>Cline</li>
-      <li>Custom MCPs</li>
-      <li>Jira & Xray APIs</li>
-      <li>GitHub Actions</li>
-    </ul>
-    <p>To create <strong>standardized test code, Jira issues and Xray artifacts</strong> in minutes instead of hours.</p>
-    <p><a href="https://github.com/rafaelperezqa/ai-test-factory" target="_blank">View repository</a></p>
-  </div>
-
-  <!-- QA Observability Platform en Español -->
-  <div class="project" id="OBS_ES">
-    <h3>QA Observability Platform</h3>
-    <p><strong>Plataforma de monitorización y control de QA con Retool</strong></p>
-    <p>Panel que recoge la información de ejecuciones automáticas mediante webhooks y APIs, mostrando KPIs, resultados de tests, incidencias y evolución de cada test.</p>
-    <ul>
-      <li>Visualización de ejecuciones y tests</li>
-      <li>Generación de Jiras desde los resultados</li>
-      <li>Alertas de desviaciones en estandarización</li>
-      <li>Monitorización de KPIs y tendencias</li>
-      <li>Lanzamiento de ejecuciones desde el panel</li>
-    </ul>
-    <p><a href="https://github.com/rafaelperezqa/qa-observability" target="_blank">Ver repositorio</a></p>
-  </div>
-
-  <!-- QA Observability Platform en English -->
-  <div class="project" id="OBS_EN" style="display:none;">
-    <h3>QA Observability Platform</h3>
-    <p><strong>QA Monitoring & Control Platform with Retool</strong></p>
-    <p>Dashboard that collects automated execution information via webhooks and APIs, showing KPIs, test results, incidents, and the evolution of each test.</p>
-    <ul>
-      <li>Executions and test visualization</li>
-      <li>Generate Jiras from results</li>
-      <li>Alerts for standardization deviations</li>
-      <li>KPIs and trend monitoring</li>
-      <li>Trigger executions from the dashboard</li>
-    </ul>
-    <p><a href="https://github.com/rafaelperezqa/qa-observability" target="_blank">View repository</a></p>
-  </div>
-
-</section>
-
-  
-<!-- ================= AI DRIVEN QA PLATFORM ================= -->
-<section id="qa-platform" class="section">
-  <h2>AI-Driven QA Platform</h2>
+<!-- HERO -->
+<div class="hero">
+  <h1>Rafael Pérez</h1>
+  <h2>Quality Platform Architect · AI-Driven QA Systems</h2>
 
   <p class="lang-es">
-    Plataforma modular que conecta Jira, Xray, GitHub, Retool e Inteligencia Artificial para estandarizar, acelerar y observar la calidad del software a escala.
+    QA Lead con 11+ años en ecommerce (Inditex), especializado en convertir QA tradicional en plataformas inteligentes mediante automatización, datos e IA.
   </p>
-
-  <p class="lang-en" style="display:none;">
-    Modular platform that connects Jira, Xray, GitHub, Retool and Artificial Intelligence to standardize, accelerate and observe software quality at scale.
+  <p class="lang-en">
+    QA Lead with 11+ years in ecommerce (Inditex), focused on transforming traditional QA into intelligent platforms using automation, data and AI.
   </p>
+</div>
 
-  <div class="platform-grid">
-
-    <!-- QA OBSERVABILITY -->
-    <div class="platform-card">
-      <div class="platform-icon">📊</div>
-
-      <h3 class="lang-es">QA Observability Platform</h3>
-      <h3 class="lang-en" style="display:none;">QA Observability Platform</h3>
-
-      <p class="lang-es">
-        Sistema de reporting y analítica que convierte datos de Jira y Xray en dashboards interactivos en Retool, permitiendo visualizar ejecuciones, fallos, tendencias y KPIs de automatización en tiempo real.
-      </p>
-
-      <p class="lang-en" style="display:none;">
-        Reporting and analytics system that turns Jira and Xray data into live Retool dashboards, providing execution history, failures, trends and automation KPIs in real time.
-      </p>
-    </div>
-
-    <!-- TEST FACTORY -->
-    <div class="platform-card highlight">
-      <div class="platform-icon">🧪</div>
-
-      <h3 class="lang-es">AI-Driven Test Factory</h3>
-      <h3 class="lang-en" style="display:none;">AI-Driven Test Factory</h3>
-
-      <p class="lang-es">
-        Fábrica de tests que genera automáticamente clases y casos de prueba desde Jira y Xray, crea tickets si no existen, inserta metadatos y deja el código listo para implementar siguiendo estándares de arquitectura.
-      </p>
-
-      <p class="lang-en" style="display:none;">
-        Test factory that automatically creates test classes and cases from Jira and Xray, creates tickets when missing, injects metadata and produces code ready to implement following architectural standards.
-      </p>
-
-      <span class="crown">👑 Core System</span>
-    </div>
-
-    <!-- ENGINEERING AUTOMATION -->
-    <div class="platform-card">
-      <div class="platform-icon">⚙️</div>
-
-      <h3 class="lang-es">Engineering Workflow Automation</h3>
-      <h3 class="lang-en" style="display:none;">Engineering Workflow Automation</h3>
-
-      <p class="lang-es">
-        Orquestación inteligente de Git y GitHub que automatiza ramas, commits y pull requests, asegurando trazabilidad, limpieza y estandarización en el desarrollo de automatización.
-      </p>
-
-      <p class="lang-en" style="display:none;">
-        Intelligent orchestration of Git and GitHub that automates branches, commits and pull requests, ensuring traceability, cleanliness and standardization across QA engineering.
-      </p>
-    </div>
-
-  </div>
+<!-- ARCHITECTURE -->
+<section>
+  <h2>Architecture</h2>
+  <p class="section-intro lang-es">
+    Todos mis sistemas de QA están conectados mediante GitHub Actions, APIs y webhooks formando una plataforma unificada de calidad.
+  </p>
+  <p class="section-intro lang-en">
+    All my QA systems are connected through GitHub Actions, APIs and webhooks, forming a unified quality platform.
+  </p>
+  <img src="assets/architecture.svg" style="max-width:100%;margin-top:20px;">
 </section>
-<!-- ================= END QA PLATFORM ================= -->
+
+<!-- PROJECTS -->
+<section>
+<h2>Projects</h2>
+<p class="section-intro lang-es">
+  Proyectos reales donde desarrollo y pruebo mi plataforma de QA basada en IA.
+</p>
+<p class="section-intro lang-en">
+  Real projects where I build and test my AI-driven QA platform.
+</p>
+
+<div class="project" id="AI_ES">
+  <h3>AI Test Factory</h3>
+  <p>Plataforma que crea tests y Jira automáticamente mediante IA.</p>
+</div>
+
+<div class="project" id="AI_EN">
+  <h3>AI Test Factory</h3>
+  <p>Platform that automatically creates tests and Jira tickets using AI.</p>
+</div>
+
+</section>
+
+<!-- PLATFORM -->
+<section>
+<h2>AI-Driven QA Platform</h2>
+
+<p class="section-intro lang-es">
+  Esta es la plataforma que he construido para escalar QA: observabilidad, generación de tests y automatización de ingeniería conectados por IA.
+</p>
+
+<p class="section-intro lang-en">
+  This is the platform I built to scale QA: observability, test generation and engineering automation powered by AI.
+</p>
+
+<div class="platform-grid">
+
+  <div class="platform-card">
+    <div class="platform-icon">📊</div>
+    <h3>QA Observability</h3>
+    <p>Live dashboards from Jira & Xray in Retool.</p>
+  </div>
+
+  <div class="platform-card highlight">
+    <div class="platform-icon">🧪</div>
+    <h3>AI Test Factory</h3>
+    <p>Jira-driven test and code generation.</p>
+    <span class="crown">👑</span>
+  </div>
+
+  <div class="platform-card">
+    <div class="platform-icon">⚙️</div>
+    <h3>Engineering Automation</h3>
+    <p>Git, branches, PRs and standards orchestrated by AI.</p>
+  </div>
+
+</div>
+
+</section>
+
+</div>
 
 <script>
 const btnES = document.getElementById('btnES');
 const btnEN = document.getElementById('btnEN');
 
-function setLanguage(lang) {
-  // Proyectos
-  document.getElementById('AI_ES').style.display  = lang === 'es' ? 'block' : 'none';
-  document.getElementById('AI_EN').style.display  = lang === 'en' ? 'block' : 'none';
-  document.getElementById('OBS_ES').style.display = lang === 'es' ? 'block' : 'none';
-  document.getElementById('OBS_EN').style.display = lang === 'en' ? 'block' : 'none';
-
-  // Plataforma (lang-es / lang-en)
-  document.querySelectorAll('.lang-es').forEach(el => {
-    el.style.display = lang === 'es' ? 'block' : 'none';
-  });
-  document.querySelectorAll('.lang-en').forEach(el => {
-    el.style.display = lang === 'en' ? 'block' : 'none';
-  });
+function setLanguage(lang){
+  document.querySelectorAll('.lang-es').forEach(e=>e.style.display=lang==='es'?'block':'none');
+  document.querySelectorAll('.lang-en').forEach(e=>e.style.display=lang==='en'?'block':'none');
+  document.getElementById('AI_ES').style.display = lang==='es'?'block':'none';
+  document.getElementById('AI_EN').style.display = lang==='en'?'block':'none';
 }
 
-btnES.addEventListener('click', () => setLanguage('es'));
-btnEN.addEventListener('click', () => setLanguage('en'));
-
-// Idioma inicial
+btnES.onclick = ()=>setLanguage('es');
+btnEN.onclick = ()=>setLanguage('en');
 setLanguage('es');
 </script>
 
