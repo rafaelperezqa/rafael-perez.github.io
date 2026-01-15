@@ -187,19 +187,27 @@
 const btnES = document.getElementById('btnES');
 const btnEN = document.getElementById('btnEN');
 
-btnES.addEventListener('click', () => {
-  document.getElementById('AI_ES').style.display = 'block';
-  document.getElementById('AI_EN').style.display = 'none';
-  document.getElementById('OBS_ES').style.display = 'block';
-  document.getElementById('OBS_EN').style.display = 'none';
-});
+function setLanguage(lang) {
+  // Proyectos
+  document.getElementById('AI_ES').style.display  = lang === 'es' ? 'block' : 'none';
+  document.getElementById('AI_EN').style.display  = lang === 'en' ? 'block' : 'none';
+  document.getElementById('OBS_ES').style.display = lang === 'es' ? 'block' : 'none';
+  document.getElementById('OBS_EN').style.display = lang === 'en' ? 'block' : 'none';
 
-btnEN.addEventListener('click', () => {
-  document.getElementById('AI_ES').style.display = 'none';
-  document.getElementById('AI_EN').style.display = 'block';
-  document.getElementById('OBS_ES').style.display = 'none';
-  document.getElementById('OBS_EN').style.display = 'block';
-});
+  // Plataforma (lang-es / lang-en)
+  document.querySelectorAll('.lang-es').forEach(el => {
+    el.style.display = lang === 'es' ? 'block' : 'none';
+  });
+  document.querySelectorAll('.lang-en').forEach(el => {
+    el.style.display = lang === 'en' ? 'block' : 'none';
+  });
+}
+
+btnES.addEventListener('click', () => setLanguage('es'));
+btnEN.addEventListener('click', () => setLanguage('en'));
+
+// Idioma inicial
+setLanguage('es');
 </script>
 
 </body>
