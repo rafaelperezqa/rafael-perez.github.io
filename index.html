@@ -113,111 +113,75 @@
   </div>
 
 </section>
-<!-- SECCIÓN WORKFLOWS -->
-<section id="workflows">
-  <h2>Workflows Automáticos / Automated Workflows</h2>
 
-  <!-- Toggle ES / EN -->
-  <div style="margin-bottom: 20px;">
-    <button id="btnWF_ES">ES</button>
-    <button id="btnWF_EN">EN</button>
-  </div>
+  
+<!-- ================= AI DRIVEN QA PLATFORM ================= -->
+<section id="qa-platform" class="section">
+  <h2>AI-Driven QA Platform</h2>
 
-  <div id="workflows-container">
+  <p class="lang-es">
+    Plataforma modular que conecta Jira, Xray, GitHub, Retool e Inteligencia Artificial para estandarizar, acelerar y observar la calidad del software a escala.
+  </p>
 
-    <!-- AI Test Skeleton Generator -->
-    <div class="workflow-card" id="WF1_ES">
-      <img src="assets/workflow-skeleton.svg" alt="Generador de Esqueleto">
-      <h4>Generador de Esqueleto de Tests</h4>
-      <p>Crea automáticamente la estructura base de un test, con carpeta, nombre, labels y estandarización completa.</p>
-      <ul>
-        <li>Sub-WF: Limpieza de entorno</li>
-        <li>Sub-WF: Creación de nueva rama</li>
-        <li>Sub-WF: Generación de clase y test</li>
-      </ul>
-      <a href="https://github.com/rafaelperezqa/ai-test-factory" target="_blank">Ver repositorio</a>
+  <p class="lang-en" style="display:none;">
+    Modular platform that connects Jira, Xray, GitHub, Retool and Artificial Intelligence to standardize, accelerate and observe software quality at scale.
+  </p>
+
+  <div class="platform-grid">
+
+    <!-- QA OBSERVABILITY -->
+    <div class="platform-card">
+      <div class="platform-icon">📊</div>
+
+      <h3 class="lang-es">QA Observability Platform</h3>
+      <h3 class="lang-en" style="display:none;">QA Observability Platform</h3>
+
+      <p class="lang-es">
+        Sistema de reporting y analítica que convierte datos de Jira y Xray en dashboards interactivos en Retool, permitiendo visualizar ejecuciones, fallos, tendencias y KPIs de automatización en tiempo real.
+      </p>
+
+      <p class="lang-en" style="display:none;">
+        Reporting and analytics system that turns Jira and Xray data into live Retool dashboards, providing execution history, failures, trends and automation KPIs in real time.
+      </p>
     </div>
 
-    <div class="workflow-card" id="WF1_EN" style="display:none;">
-      <img src="assets/workflow-skeleton.svg" alt="Test Skeleton Generator">
-      <h4>Test Skeleton Generator</h4>
-      <p>Automatically generates the base structure of a test, with folder, name, labels and full standardization.</p>
-      <ul>
-        <li>Sub-WF: Environment cleanup</li>
-        <li>Sub-WF: Create new branch</li>
-        <li>Sub-WF: Generate class & test</li>
-      </ul>
-      <a href="https://github.com/rafaelperezqa/ai-test-factory" target="_blank">View repository</a>
+    <!-- TEST FACTORY -->
+    <div class="platform-card highlight">
+      <div class="platform-icon">🧪</div>
+
+      <h3 class="lang-es">AI-Driven Test Factory</h3>
+      <h3 class="lang-en" style="display:none;">AI-Driven Test Factory</h3>
+
+      <p class="lang-es">
+        Fábrica de tests que genera automáticamente clases y casos de prueba desde Jira y Xray, crea tickets si no existen, inserta metadatos y deja el código listo para implementar siguiendo estándares de arquitectura.
+      </p>
+
+      <p class="lang-en" style="display:none;">
+        Test factory that automatically creates test classes and cases from Jira and Xray, creates tickets when missing, injects metadata and produces code ready to implement following architectural standards.
+      </p>
+
+      <span class="crown">👑 Core System</span>
     </div>
 
-    <!-- Test + Jira Creator -->
-    <div class="workflow-card" id="WF2_ES">
-      <img src="assets/workflow-test.svg" alt="Test + Jira">
-      <h4>Creación Automática de Test + Jira</h4>
-      <p>Genera un test y su issue en Jira, integrando Xray, con toda la información prellenada y estandarizada.</p>
-      <ul>
-        <li>Sub-WF: Comprobación de existencia de Jira</li>
-        <li>Sub-WF: Creación de Jira si no existe</li>
-        <li>Sub-WF: Vinculación con Xray</li>
-      </ul>
-      <a href="https://github.com/rafaelperezqa/ai-test-factory" target="_blank">Ver repositorio</a>
+    <!-- ENGINEERING AUTOMATION -->
+    <div class="platform-card">
+      <div class="platform-icon">⚙️</div>
+
+      <h3 class="lang-es">Engineering Workflow Automation</h3>
+      <h3 class="lang-en" style="display:none;">Engineering Workflow Automation</h3>
+
+      <p class="lang-es">
+        Orquestación inteligente de Git y GitHub que automatiza ramas, commits y pull requests, asegurando trazabilidad, limpieza y estandarización en el desarrollo de automatización.
+      </p>
+
+      <p class="lang-en" style="display:none;">
+        Intelligent orchestration of Git and GitHub that automates branches, commits and pull requests, ensuring traceability, cleanliness and standardization across QA engineering.
+      </p>
     </div>
 
-    <div class="workflow-card" id="WF2_EN" style="display:none;">
-      <img src="assets/workflow-test.svg" alt="Test + Jira">
-      <h4>Automated Test + Jira Creation</h4>
-      <p>Generates a test and its Jira issue, fully integrated with Xray, with pre-filled and standardized information.</p>
-      <ul>
-        <li>Sub-WF: Check if Jira exists</li>
-        <li>Sub-WF: Create Jira if missing</li>
-        <li>Sub-WF: Link with Xray</li>
-      </ul>
-      <a href="https://github.com/rafaelperezqa/ai-test-factory" target="_blank">View repository</a>
-    </div>
-
-    <!-- ReTool Dashboard Launcher -->
-    <div class="workflow-card" id="WF3_ES">
-      <img src="assets/workflow-retool.svg" alt="ReTool Dashboard">
-      <h4>Lanzador de Panel de Retool</h4>
-      <p>Permite visualizar ejecuciones, KPIs, incidencias y lanzar nuevas ejecuciones desde un único panel centralizado.</p>
-      <ul>
-        <li>Sub-WF: Visualización de resultados</li>
-        <li>Sub-WF: Creación de Jira desde el panel</li>
-        <li>Sub-WF: Monitorización de tendencias</li>
-      </ul>
-      <a href="https://github.com/rafaelperezqa/qa-observability" target="_blank">Ver repositorio</a>
-    </div>
-
-    <div class="workflow-card" id="WF3_EN" style="display:none;">
-      <img src="assets/workflow-retool.svg" alt="ReTool Dashboard">
-      <h4>ReTool Dashboard Launcher</h4>
-      <p>Allows visualization of executions, KPIs, incidents and launching new runs from a single centralized dashboard.</p>
-      <ul>
-        <li>Sub-WF: Results visualization</li>
-        <li>Sub-WF: Jira creation from dashboard</li>
-        <li>Sub-WF: Trends monitoring</li>
-      </ul>
-      <a href="https://github.com/rafaelperezqa/qa-observability" target="_blank">View repository</a>
-    </div>
-
-    <!-- Puedes añadir más workflows simplemente duplicando este bloque y cambiando ID -->
   </div>
 </section>
-
-<script>
-const btnWF_ES = document.getElementById('btnWF_ES');
-const btnWF_EN = document.getElementById('btnWF_EN');
-
-btnWF_ES.addEventListener('click', () => {
-  document.querySelectorAll('#workflows-container > div[id$="_ES"]').forEach(d=>d.style.display='block');
-  document.querySelectorAll('#workflows-container > div[id$="_EN"]').forEach(d=>d.style.display='none');
-});
-
-btnWF_EN.addEventListener('click', () => {
-  document.querySelectorAll('#workflows-container > div[id$="_ES"]').forEach(d=>d.style.display='none');
-  document.querySelectorAll('#workflows-container > div[id$="_EN"]').forEach(d=>d.style.display='block');
-});
-</script>
+<!-- ================= END QA PLATFORM ================= -->
 
 <script>
 const btnES = document.getElementById('btnES');
